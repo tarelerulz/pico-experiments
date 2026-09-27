@@ -1,0 +1,16 @@
+# Build outputs
+build/
+*.o
+*.elf
+*.bin
+*.uf2
+*.dis
+*.map
+
+# Raspberry Pi's own repos, referenced not vendored — see README
+pico-sdk/
+pico-examples/
+
+# Python bytecode caches
+__pycache__/
+*.pyc

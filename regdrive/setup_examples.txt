@@ -1,0 +1,10 @@
+2026-08-20 05:22:54  setup reset_done=01ffffff gpio_oe=3ff00000 funcsel20-29=5555555555
+2026-08-20 05:27:00  setup reset_done=01ffffff gpio_oe=3ff00000 funcsel20-29=5555555555
+2026-08-20 05:33:36  setup reset_done=01ffffff gpio_oe=3ff00000 funcsel20-29=5555555555
+2026-08-20 05:33:47  setup reset_done=01ffffff gpio_oe=3ff00000 funcsel20-29=5555555555
+2026-08-20 05:33:58  setup reset_done=01ffffff gpio_oe=3ff00000 funcsel20-29=5555555555
+2026-08-20 05:34:10  setup reset_done=01ffffff gpio_oe=3ff00000 funcsel20-29=5555555555
+2026-08-20 05:34:27  setup reset_done=01ffffff gpio_oe=3ff00000 funcsel20-29=5555555555
+2026-08-20 05:34:40  setup reset_done=01ffffff gpio_oe=3ff00000 funcsel20-29=5555555555
+2026-08-20 05:34:49  setup reset_done=01ffffff gpio_oe=3ff00000 funcsel20-29=5555555555
+2026-08-20 05:34:57  setup reset_done=01ffffff gpio_oe=3ff00000 funcsel20-29=5555555555

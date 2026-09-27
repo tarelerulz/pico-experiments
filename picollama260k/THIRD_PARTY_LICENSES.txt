@@ -1,0 +1,45 @@
+This project's own work is the RP2040 port: flash-backed weight loading
+(replacing mmap/fread), USB-serial I/O (replacing stdio), and capping the
+context length so the KV-cache fits in 264KB of SRAM. The transformer
+inference code itself (structs, forward pass, tokenizer, sampler, generate)
+in picollama.c is verbatim from Andrej Karpathy's llama2.c, and the model
+weights in model_data.h are his published stories260K checkpoint, not
+trained by this project.
+
+==========================================================================
+llama2.c (transformer inference code)
+==========================================================================
+
+Source: https://github.com/karpathy/llama2.c
+
+MIT License
+
+Copyright (c) 2023 Andrej
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+==========================================================================
+stories260K model weights (model_data.h)
+==========================================================================
+
+Source: https://huggingface.co/karpathy/tinyllamas/tree/main/stories260K
+
+Published by Andrej Karpathy as part of the llama2.c project (see above for
+license). Not trained by this project — used here as a pretrained checkpoint
+to demonstrate the RP2040 port.
